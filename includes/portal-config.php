@@ -32,8 +32,9 @@ switch (THIS_PAGE){
         $logo = 'fa-heart';
     break;
 
-    case 'contactme.php':
-        $title = "Veronica's IT 162 Contact Page";
+
+    case '../big/index.php':
+        $title = "Veronica's IT 162 BIG Homepage";
         $logo = 'fa-envelope';
         $logo_color = ' style="color:#FFB6C1"';
     break;
@@ -50,10 +51,21 @@ switch (THIS_PAGE){
         $logo_color = 'style="color:#9370DB"';
     break;
 
+    case "..fp/index.php":
+        $title = "Veronica's IT 162 Final Project";
+        $logo = 'fa-envelope';
+        $logo_color = ' style="color:#FFB6C1"';
+    break;
+    
+    case 'contactme.php':
+        $title = "Veronica's IT 162 Contact Page";
+        $logo = 'fa-envelope';
+        $logo_color = ' style="color:#FFB6C1"';
+    break;
+
     default:
         $title = THIS_PAGE;
         $logo = 'fa-object-group';
-        $logo_color = '';
     }
 
 $nav1['index.php']="Welcome";
