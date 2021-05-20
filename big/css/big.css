@@ -1,0 +1,197 @@
+/* My IT162 Portal Website Styles */
+
+html {
+    background-color:#baebe1;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main.wrapper {
+    background-color:#fff;
+    opacity: 0.8;
+    overflow:auto;
+    width:92%;
+	margin:auto;
+}
+
+section {
+    width:65%;
+	float:left;
+}
+
+a {
+    color: inherit; 
+} 
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+    opacity: 1;
+}
+
+.logo {
+    color:#48c9b0;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+img {
+    margin: 0% 5% 2%;
+}
+
+img.desktop {
+    float:left;
+     width:50%;
+}
+
+@font-bebas {
+    font-family: "Bebas Neue";
+    src: url(BebasNeue-Regular.ttf);
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 3px 5px 5px #333;
+    /* -webkit-text-stroke: 5px black;
+    -webkit-text-fill-color: white; */
+}
+h2.pageID {
+    margin:5% 10% 2%;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+@font-roboto {
+    font-family: "Roboto";
+    src: url (Roboto-Black.tff)
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+}
+
+img.tablet, img.phone {
+    display:none;
+ }  
+
+/* Change background color of navigation on selected page */
+ul.topnav li a.selected {
+         background-color: #ccc;
+         color:#000;
+ }
+
+ul {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    line-height: 25px;
+}
+aside {
+    margin: 1% 0% 0%;
+    width:30%;
+	float:right;
+}
+
+footer {
+    text-align: center;
+}
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	clear:both;
+}
+
+/*Hide agenda view of calendar */
+div.embed-container.phone {
+    display: none;
+}
+
+/* START RESPONSIVE STYLES */
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	main.wrapper {
+		width:92%;
+		margin:auto;
+	}
+	section {
+		width:50%;
+		float:left;
+	}
+	p {
+        margin:5%;
+    }
+	aside {	
+		width:45%;
+		float:right;
+	}
+	
+    img.tablet {
+       		width:100%;
+            display:inline-block;
+            margin: 0% 0% 0% -2%;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	}  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:850px) {
+    h2.pageID {
+        text-align:center;
+    }
+    
+    img.phone {
+       		width:100%;
+            display:inline-block;
+            margin: 0%;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+
+    h1 {
+        text-align: center;
+    }
+    p {
+        margin:7%;
+    }
+    aside {
+        margin:1% 10% 10%;
+    }
+    /* Hide month view of calendar */
+    div.embed-container.desktop {
+        display: none;
+    }
+}
