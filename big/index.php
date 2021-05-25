@@ -1,13 +1,19 @@
 <?php include "includes/header.php"?>
-    <p>Develop and place an updated version of the "multiple.php" contact form (located in your web120 includes folder) on this main page. Adjust its fields to ask the basic questions you'd always need to ask any client to help determine if you can help them with their website needs.</p>
-    <form>add multiple.php client form here </form>
-</section>
-   <!-- END LEFT COL -->
-   <!-- START RIGHT COL --> 
-<aside>
-    <h3>Basic Website Design Cycle</h3>
-    <p>Provide at least 3 (linked) resources that help you and/or your web team with steps found in very basic website design and development cycle. For example, client surveys, wireframing tools, etc.</p>
-    <p>Here's a website to help get you started, <a href="https://business.tutsplus.com/articles/how-to-extract-the-facts-with-a-web-design-client-questionnaire--fsw-1830" target="_blank">https://business.tutsplus.com/articles/...</a></p>
-   </aside>
-   <!-- END RIGHT COL -->
-   <?php include "includes/footer.php"?>
+	<?php include "includes/multiple.php"?>
+		</section>
+		<!-- END LEFT COL -->
+		<!-- START RIGHT COL -->
+		<aside>
+			<h3>Basic Website Design Cycle</h3>
+			<ol>
+				<li><a href="https://www.jimdo.com/blog/preparing-build-website-create-site-plan/" target="_blank">Planning</a>
+					<li><a href="https://slickplan.com/content/gathering" target="_blank">Gathering Content</a></li>
+					<li><a href="https://www.mockplus.com/blog/post/user-flow-tools" target="_blank">Flowchart Tools</a></li>
+					<li><a href="https://www.uxpin.com/studio/blog/creating-a-wireframe/" target="_blank">Wireframing Guide</a></li>
+					<li><a href="https://www.browserstack.com/responsive" target="_blank">Responsive Testing</a></li>
+					<li><a href="https://mailchimp.com/resources/website-launch-checklist/" taret="_blank">How to Launch a Website</a></li>
+			</ol>
+		</aside>
+		</main>
+		<!-- END RIGHT COL -->
+		<?php include "includes/footer.php"?>
