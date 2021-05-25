@@ -36,56 +36,56 @@ switch (THIS_PAGE){
 
     case "index.php":
         $title = "Veronica's Web Research (BIG)";
-        $logo = 'fa-envelope';
+        $logo = 'fa-angellist';
         $PageID = "Client Questionnaire";
     break;
 
     case "flexbox.php":
         $title = "Veronica's Flexbox Research/Tutorial";
-        $logo = 'fa-search';
-        $PageID = "Flexbox Research";
+        $logo = 'fa-cube';
+        $PageID = "Flexbox";
     break;
 
     case "galleries.php":
-        $title = "Veronica's Gallerie Research";
-        $logo = 'fa-object-group';
+        $title = "Veronica's Gallery Research";
+        $logo = 'fa-camera-retro';
         $PageID = "Google Galleries";
     break;
 
     case "calendar.php":
-        $title = "Veronica's Google Calendar Example";
-        $logo = 'fa-envelope';
+        $title = "Veronica's Google Calendar";
+        $logo = 'fa-calendar';
         $PageID = "Google Calendar";
     break;
 
     case "map.php":
-        $title = "Veronica's Google Map Example";
-        $logo = 'fa-envelope';
+        $title = "Veronica's Google Map";
+        $logo = 'fa-map-o';
         $PageID = "Google Maps";
     break;
 
     case "youtube.php":
-        $title = "Veronica's YouTube Video Examples";
-        $logo = 'fa-envelope';
-        $PageID = "YouTube Web Design Videos";
+        $title = "Veronica's Favorite YouTube Resources";
+        $logo = 'fa-youtube';
+        $PageID = "YouTube Videos for Web Designers";
     break;
 
     case "shoppingcarts.php":
-        $title = "Veronica's Shopping Cart Examples";
-        $logo = 'fa-envelope';
-        $PageID = "Shopping Cart";
+        $title = "Veronica's Shopping Cart Research/Tutorial";
+        $logo = 'fa-cart-plus';
+        $PageID = "Shopping Carts";
     break;
 
     case "siteapp.php":
         $title = "Veronica's Websites vs Apps Research";
-        $logo = 'fa-envelope';
-        $PageID = "Site vs Apps";
+        $logo = 'fa-wrench';
+        $PageID = "Websites vs Apps";
     break;
 
     case "webcam.php":
-        $title = "Veronica's Webcam Examples";
-        $logo = 'fa-envelope';
-        $PageID = "Webcam";
+        $title = "Veronica's Favorite Live Webcams";
+        $logo = 'fa-eye';
+        $PageID = "Live Webcams";
     break;
 
     default:
