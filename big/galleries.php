@@ -1,14 +1,17 @@
 <?php include "includes/header.php"?>
-    <p>No matter your profession, whether you’re a web designer, a photographer, or even a model, chances are you need to showcase your work in order to get clients. Once you have your own website, an effective way to accomplish this is by putting up an online image gallery. When building your gallery, it’s important to keep your design clean and minimalistic in order to not diminish the work you want to display. Luckily the gallery templates I have included are great for beginners because they are simple and easy to use, and only require HTML/CSS, making it a much more simple process in order to get your work displayed in an effective manner.</p>
+<p>No matter your profession, whether you’re a web designer, a photographer, or even a model, chances are you need to showcase your work in order to get clients. Once you have your own website, an effective way to accomplish this is by putting up an online image gallery. When building your gallery, it’s important to keep your design clean and minimalistic in order to not diminish the work you want to display. Luckily the gallery templates I have included are great for beginners because they are simple and easy to use, and only require HTML/CSS, making it a much more simple process in order to get your work displayed in an effective manner.</p>
 
     <h2>Simple Basic Grid Gallery with Hover Effect -</h2>
+    <img src="images/gallery-image-1.jpeg" alt="Simple Grid Gallery">
+     
     <p>This type of image gallery uses a basic grid layout that is very easy to use and also attractive, making it suitable for an array of needs. This gallery also includes a beautiful hover effect.</p>
     <h3>How to Use:</h3>
 
-    <p>Insert the main HTML code. Insert your images within each &lt;div class=&rdquo;container&rdquo;&gt;&lt;/div&gt; element.</p>
+    <p>Insert the main HTML code. Insert your images within each <strong>&lt;div class=&rdquo;container&rdquo;&gt;&lt;/div&gt;</strong> element.</p>
 
-    <p>HTML:</p>
-<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    <h3>HTML:</h3>
+<div class="content-container">
+<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 &lt;h1&gt;Simple gallery pure css&lt;/h1&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;div class="container-all"&gt;
 &lt;div class="container"&gt;
@@ -41,7 +44,7 @@
   &lt;span class="title&gt;Lorem ipsum dolor&lt;/span&gt;
   &lt;span class="text"&gt;Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus&lt;/span&gt;
   &lt;/div&gt;
-</code></pre>
+</code></div>
 
 <p>Insert the main CSS code:</p>
 
@@ -132,11 +135,13 @@ img{
 
 <h2>CSS Masonry Grid -</h2>
 
+<img src="images/gallery-image-2.gif" alt ="Masonry Grid">
+
 <p>This gallery is made by Joseph Shambrook that also uses a basic grid layout that uses a masonry style which is based on columns. This differs from other types of layouts because it doesn’t use fixed height rows. Sometimes this is referred to as “Pinterest Style."</p>
 
 <h3>How to Use:</h3>
 
-<p>Insert the main HTML code. Insert your images within each &lt;div class=&rdquo;item&rdquo;&gt;&lt;/div&gt; element.</p>
+<p>Insert the main HTML code. Insert your images within each <strong>&lt;div class=&rdquo;item&rdquo;&gt;&lt;/div&gt;</strong> element.</p>
 
 <code>&lt;div class=&quot;grid&quot;&gt;
   &lt;div class=&quot;item&quot; style=&quot;background-image: url(https://images.unsplash.com/photo-1439209306665-700c9bca794c?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=)&quot;&gt;&lt;/div&gt; &lt;!-- this is where you place your images --&gt;
@@ -206,7 +211,7 @@ img{
 
 <h3>How to Use:</h3>
 
-<p>Insert the HTML for small images that will be used as thumbnails in the grid. Insert your images within each &lt;label for=&rdquo;&rdquo; class=&rdquo;grid-item&rdquo;&gt;&lt;/label&gt; element.</p>
+<p>Insert the HTML for small images that will be used as thumbnails in the grid. Insert your images within each <strong>&lt;label for=&rdquo;&rdquo; class=&rdquo;grid-item&rdquo;&gt;&lt;/label&gt;</strong> element.</p>
 
 <code>&lt;div class=&quot;grid&quot;&gt;
   &lt;label for=&quot;pic-1&quot; class=&quot;grid-item&quot;&gt;&lt;img src=&quot;1.jpg&quot;&gt;&lt;/label&gt;
@@ -217,7 +222,7 @@ img{
 &lt;/div&gt;
 </code>
 
-<p>Insert the HTML which will display thumbnails in a fullscreen lightbox. Insert your images within each &lt;label for=&rdquo;&rdquo; class=&rdquo;lightbox&rdquo;&gt;&lt;/label&gt; element.</p>
+<p>Insert the HTML which will display thumbnails in a fullscreen lightbox. Insert your images within each <strong>&lt;label for=&rdquo;&rdquo; class=&rdquo;lightbox&rdquo;&gt;&lt;/label&gt;</strong> element.</p>
 
 <code>&lt;input type=&quot;checkbox&quot; id=&quot;pic-1&quot;&gt;
 &lt;label for=&quot;pic-1&quot; class=&quot;lightbox&quot;&gt;&lt;img src=&quot;large-1.jpg&quot;&gt;&lt;/label&gt;
@@ -231,7 +236,7 @@ img{
 &lt;label for=&quot;pic-5&quot; class=&quot;lightbox&quot;&gt;&lt;img src=&quot;large-5.jpg&quot;&gt;&lt;/label&gt;
 </code>
 
-<p>Insert the main CSS style needed for photo gallery:</p>
+<h3>CSS:</h3>
 
 <pre>* {
   -moz-box-sizing: border-box;
@@ -339,14 +344,26 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 </pre>
 
 <p>I hope the galleries and instructions I have provided were easy to understand and have successfully guided you in designing a simple yet effective image gallery for your website that will be sure to dazzle all your clients.</p>
-
 </section>
    <!-- END LEFT COL -->
    <!-- START RIGHT COL --> 
 <aside>
+<div class="research-aside">
     <h3>Sources:</h3>
-    <p>Place sources here.</p>
-    <p>Here's a website to help get you started, <a href="https://business.tutsplus.com/articles/how-to-extract-the-facts-with-a-web-design-client-questionnaire--fsw-1830" target="_blank">https://business.tutsplus.com/articles/...</a></p>
+      <h4>Colorlib</h4>
+        <p>Colorlib. “50 Best Photo Gallery Website Templates 2021.” Colorlib, 29 Mar. 2021, colorlib.com/wp/photo-gallery-website-templates.</p>
+      <h4>CodeMyUI</h4>
+        <p>George, Saijo. “CSS Masonry Grid for Image Gallery Ξ ℂ𝕠𝕕𝕖𝕄𝕪𝕌𝕀.” CodeMyUI, 15 Oct. 2018, codemyui.com/css-masonry-grid-for-image-gallery.</p>
+      <h4>CSS Script</h4>
+        <p>jQueryScript. “10 Best Galleries In Pure JavaScript & CSS (2021 Update).” CSS Script, 2 Feb. 2021, www.cssscript.com/top-10-galleries-pure-javascript-css.</p>
+      <h4>Sitepoint</h4>
+        <p>Nimesh, Rakhitha. “Understanding Masonry Layout - SitePoint.” Sitepoint, 23 Feb. 2014, www.sitepoint.com/understanding-masonry-layout.
+        </p>
+      <h4>Wp Shopmart</h4>
+        <p>Shakyawal, Yashwant. “11 Best Free HTML CSS Image Gallery.” Wpshopmart, 2 Sept. 2020, wpshopmart.com/best-html-css-image-gallery.
+        </p>
    </aside>
+   </main>
    <!-- END RIGHT COL -->
    <?php include "includes/footer.php"?>
+</div>
