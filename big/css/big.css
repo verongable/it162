@@ -1,7 +1,11 @@
-/* My IT162 Portal Website Styles */
+/* My IT162 BIG Styles */
+* {
+    margin:0;
+    padding:0;
+}
 
-html {
-    background-color:#baebe1;
+html,body {
+    background-color:#96d0c4;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -9,18 +13,101 @@ main.wrapper {
     background-color:#fff;
     opacity: 0.8;
     overflow:auto;
-    width:92%;
+    width: 960px;
 	margin:auto;
+    padding-bottom: 3%;
+    border: 1px solid #009879;
+}
+
+img {
+    margin-bottom: 7%;
+    max-width: 100%;
+}
+
+img.flexbox-image-8,img.flexbox-image-9{
+    margin-bottom: -70px;
+}
+
+img.flexbox-image-11 {
+    margin-bottom: -138px;
 }
 
 section {
-    width:65%;
-	float:left;
+    width: 50%;
+	float: left;
+    padding-left: 6%;
+}
+
+div>img {
+    margin-bottom: 40px;
+    margin-left: 0.5%;
+    max-width: 95%;
+}
+
+div.content-container {
+    margin-bottom: 1%;
+}
+
+.second-column {
+    width: 34%;
+    float: right;
+    padding: 2%;
+    word-wrap: break-word;
+    margin: 3%;
+    margin-top: 7.2%;
+}
+aside {
+    width: 26%;
+    float: right;
+    background-color: #ffede0;
+    border: 1px solid #e4d199;
+    border-radius: 20px;
+    line-height: 1.45;
+    padding: 2%;
+    color: #24292e;
+    word-wrap: break-word;
+    margin: 3%;
+    }
+
+div.google-aside {
+    width: 33%;
+    float: right;
+    background-color: #ffede0;
+    border: 1px solid #e4d199;
+    border-radius: 20px;
+    line-height: 1.45;
+    padding: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    color: #24292e;
+    word-wrap: break-word;
+    margin: 3%;
+    margin-top: 10.5%;
+}
+
+aside>h3 {
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+aside>p {
+    margin-right: -10px;
+    overflow-wrap: break-word;
+}
+
+.calendar>p {
+    line-height:-0px;
 }
 
 a {
-    color: inherit; 
+    color: inherit;
+    text-decoration: none;
 } 
+
+a:hover {
+    background-color:#baebe1;
+    color: #f9fafa;
+}
 
 h1>a {
     text-decoration: none;
@@ -35,71 +122,90 @@ h1>a {
     font-size:1.25em;
 }
 
-img {
-    margin: 0% 5% 2%;
+h1{
+    font-size: 32px;
 }
 
-img.desktop {
-    float:left;
-     width:50%;
-}
-
-@font-bebas {
-    font-family: "Bebas Neue";
-    src: url(BebasNeue-Regular.ttf);
-}
-
-h1 {
-    font-family: 'Bebas Neue', sans-serif;
+h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
-    text-shadow: 3px 5px 5px #333;
-    /* -webkit-text-stroke: 5px black;
-    -webkit-text-fill-color: white; */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
+
 h2.pageID {
-    margin:5% 10% 2%;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-}
-h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
+    margin-top: 7%;
+    font-size: 40px;
 }
 
-@font-roboto {
-    font-family: "Roboto";
-    src: url (Roboto-Black.tff)
-}
 p {
-    font-family: 'Roboto', sans-serif;
-    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    line-height: 30px;
+    padding-bottom: 30px;
 }
 
-img.tablet, img.phone {
-    display:none;
- }  
+p.video-caption {
+    margin-top: 5%;
+}
+div.header-title {
+    padding: 10px;
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+    text-shadow: 3px 5px 5px #333;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    color: #41bba3;
+}
 
-/* Change background color of navigation on selected page */
-ul.topnav li a.selected {
-         background-color: #ccc;
-         color:#000;
- }
-
-ul {
-    font-family: 'Roboto', sans-serif;
+ul, ol {
+    font-family: 'Montserrat', sans-serif;
+    margin: 2em;
+    font-weight: 200;
 }
 
 li {
-    line-height: 25px;
+    line-height: 30px;
 }
-aside {
-    margin: 1% 0% 0%;
-    width:30%;
-	float:right;
+
+code{
+    padding-bottom: 30px;
+    display: block;
+}
+
+pre {
+    padding-bottom: 25px;
+}
+
+code, pre {
+    font-size: 16px;
+    background-color: #f6f8fa;
+    border: 1px solid #d0d8d8;
+    border-radius: 20px;
+    line-height: 1.45;
+    margin-bottom: 6%;
+    padding: 6%;
+    color: #24292e;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+address {
+    font-style: normal;
+}
+
+form>div {
+    margin-bottom: 1%;
 }
 
 footer {
     text-align: center;
+    clear:both;
+}
+
+footer p {
+    padding: 2em;
 }
 /* Embed Responsively Rules! */
 div.embed-container {
@@ -108,7 +214,7 @@ div.embed-container {
     height: 0;
     overflow: hidden;
     margin: auto;
-    max-width: 98%;
+    max-width: 100%;
 } 
 
 div.embed-container iframe {
@@ -119,79 +225,49 @@ div.embed-container iframe {
     height: 100%;
 }
 
-footer {
-	clear:both;
-}
-
 /*Hide agenda view of calendar */
-div.embed-container.phone {
+div.embed-container.agenda-view {
     display: none;
 }
 
 /* START RESPONSIVE STYLES */
-/* TABLET */
-@media all and (min-width:737px) and (max-width:1399px) {
-	main.wrapper {
-		width:92%;
-		margin:auto;
-	}
-	section {
-		width:50%;
-		float:left;
-	}
-	p {
-        margin:5%;
-    }
-	aside {	
-		width:45%;
-		float:right;
-	}
-	
-    img.tablet {
-       		width:100%;
-            display:inline-block;
-            margin: 0% 0% 0% -2%;
-    }
-    
-    img.desktop, img.phone {
-       	display:none;
-    	}  
-    
-    
-    /* Change background color of navigation on selected page */
-    ul.topnav li a.selected {
-        background-color: #ccc;
-        color:#000;
-    }
-}
 
 /* PHONE */
-@media all and (max-width:850px) {
-    h2.pageID {
-        text-align:center;
+@media all and (max-width:375px) {
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;
     }
     
-    img.phone {
-       		width:100%;
-            display:inline-block;
-            margin: 0%;
+    /* Hide Month View Calendar */
+    div.embed-container.month-view {
+        display:none;
     }
-    
-    img.tablet, img.desktop {
-       	display:none;
-    	}  
 
-    h1 {
+    main.wrapper {
+        width: 90%;
+    }
+
+    section {
+        float: none;
+        width: 85%;
         text-align: center;
-    }
-    p {
-        margin:7%;
-    }
-    aside {
-        margin:1% 10% 10%;
-    }
-    /* Hide month view of calendar */
-    div.embed-container.desktop {
-        display: none;
-    }
+      }
+      aside,div.second-column,div.google-aside {
+        float: none;
+        width: 90%;
+        text-align: center;
+      }
+
+      .research-aside {
+          padding:5%;
+
+      }
+}
+
+/*TABLET*/
+@media all and (min-width:376px) and (max-width:859px) {
+    main.wrapper {
+        width: 80%;
+	}
 }
